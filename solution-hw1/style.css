@@ -1,0 +1,15 @@
+.container {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+}
+
+.text {
+    text-align: left;
+}
+
+.food {
+    border: 3px solid black;
+}
