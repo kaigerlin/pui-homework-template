@@ -40,6 +40,10 @@ nav {
     padding: 10px;
 }
 
+.gallery-highlight:hover {
+    font-weight: bold;
+}
+
 .gallery-container:hover {
     background-color: #FFFF00;
     cursor: pointer;
