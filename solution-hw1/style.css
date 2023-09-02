@@ -1,11 +1,123 @@
-h1, h2, h3{
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav {
+    margin-bottom: 125px;
+}
+
+.nav-menu {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.nav-menu:hover {
+    background-color: #FFFF00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-menu-selected {
+    font-weight: bold;
+}
+
+.nav-menu-frame {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.gallery-container {
+    margin: auto;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.gallery-container:hover {
+    background-color: #FFFF00;
+    cursor: pointer;
+}
+
+.gallery-image {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 5px solid black;
+}
+
+.cart-text {
+    text-align: center;
+}
+
+.cart-image {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 5px solid black;
+}
+
+.cart-container {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cart-checkout {
+    margin: auto;
+    text-align: center;
+}
+
+.detail-container {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.detail-image {
+    width: 600px;
+    display: block;
+    margin: auto;
+    outline: 5px solid black;
+}
+
+.detail-section {
+    width:400px;
+    margin:auto;
+}
+
+.detail-select {
+    border: 6px solid Black;
+    width: 400px;
+    height: 65px;
+    font-size: 28px;
+}
+
+.detail-cart {
+    display: flex;
+}
+
+.detail-total {
+    margin: auto;
+    font-weight: bold;
+}
+
+h2, h3{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
+h2 {
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     font-weight: normal;
 }
 
@@ -18,35 +130,36 @@ p {
     font-size: 36px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
 
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #FFFF00;
+    border: 5px solid black;
+    height: 75px;
+    width: 250px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.divider {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.spacer {
+    margin-top: 100px;
+}
+
+.spacer2 {
+    margin-top: 40px;
 }
 
 #logo {
     margin: 20px;
     width: 500px;
-}
-
-.container {
-    width: 400px;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
-    padding: 10px;
-}
-
-.container:hover {
-    background-color: #FFFF00;
-    cursor: pointer;
-}
-
-.text {
-    text-align: left;
-}
-
-.food {
-    outline: 5px solid black;
-}
-
-.spacer {
-    margin-top: 150px;
 }
