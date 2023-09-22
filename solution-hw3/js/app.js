@@ -1,4 +1,3 @@
-
 let glazePrice = [
     {
       option: 'Keep original',
