@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Product Detail</title>
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/product-detail.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+        <a href="index.html">
+          <img id="logo" src="../assets/logo/logo-01.svg" alt="logo">
+        </a>
+        <nav>
+          <article class="nav-menu">
+            <article class="nav-menu-frame">
+                <span class="nav-menu-selected"><mark>PRODUCTS</mark></span>
+            </article>
+            <article class="nav-menu-frame">
+                <a href="shopping-cart.html"><span class="nav-highlight">CART</span></a>
+
+                
+            </article>
+          </article>
+          <hr>
+          <h2></h2> 
+        </nav>
+    </header>
+
+    <section class="detail-main">  
+      <img class="detail-image" alt="original-cinnamon-roll">
+
+      <section class="detail-section">
+          <article>
+              <p>Customize our delivious, hand-made cinammon roll to your liking!</p>
+
+              <article class="spacer"></article>
+
+              <p>Glazing:</p>
+              <select class="detail-select" id="glaze-select" onchange="glazingChange(this)">
+              </select>
+
+              <article class="spacer2"></article>
+
+              <p>Pack size:</p>
+              <select class="detail-select" id="size-select" onchange="sizeChange(this)">
+              </select>
+
+              <article class="spacer"></article>
+          </article>
+
+          <article class="detail-cart">
+              <p class="detail-total" id="base-price"></p>
+              <article><button id="add-to-cart">Add to Cart</button></article>
+          </article>
+      </section>
+    </section>
+
+  </body>
+  
+</html>
+  

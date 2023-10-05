@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Product Gallery</title>
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/shopping-cart.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <img id="logo" src="../assets/logo/logo-01.svg" alt="logo">
+      </a>
+      <nav>
+        <article class="nav-menu">
+          <article class="nav-menu-frame">
+              <a href="index.html"><span class="nav-highlight">PRODUCTS</span></a>
+          </article>
+          <article class="nav-menu-frame">
+              <span class="nav-menu-selected"><mark>CART</mark></span>
+          </article>
+        </article>
+        <hr>
+        <h2>Shopping cart</h2> 
+      </nav>
+    </header>
+
+    <section class="cart-content">
+
+      <article id="cart-list">
+        <template id="cart-template">
+          <article class="cart-container">
+            <article class="cart-container-inner">
+              <img class="cart-image" id="cart-roll-image">
+              <article class="cart-text-combined">
+                <p class="cart-text" id="cart-roll-name"></p>
+                <p class="cart-text" id="cart-roll-glazing">Glazing:</p>
+                <p class="cart-text" id="cart-roll-size">Pack Size:</p>
+              </article>
+              <p class="cart-text-price" id="cart-roll-price">$ </p>
+            </article>
+            <h3 id="remove-button">Remove</h3>
+          </article>
+        </template>
+      </article>
+
+      <article class="divider"><hr></article>
+      <article class="cart-price-container">
+        <article class="cart-text-combined"><p class="cart-text">Total</p></article>
+        <p class="cart-text-price" id="cart-total-price"></p>
+      </article>
+      <article class="cart-checkout"><button>Checkout</button></article>
+
+    </section>
+
+  </body>
+</html>
