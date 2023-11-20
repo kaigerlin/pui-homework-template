@@ -1,0 +1,158 @@
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px 4px rgb(55, 82, 255); /* Initial shadow */
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgb(55, 82, 255);/* Intermediate glow effect */
+  }
+  100% {
+    box-shadow: 0 0 8px 4px rgb(55, 82, 255); /* Return to the original shadow */
+  }
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+
+label {
+  font-family: 'Roboto Mono', sans-serif;
+}
+.main-title {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 150px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(rgb(111,114,119), rgb(41,44,49));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.toggle-container {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(250, 252, 255, 0.2), rgba(250, 252, 255, 0));
+  backdrop-filter: blur(5px);
+  border: 1px solid #4f4f4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 21px;
+  color: #ababab;
+  transition: background-color 0.3s, color 0.3s, width 0.2s, height 0.4s, font-size 0.3s;
+  margin: 5px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toggle-circle:hover {
+  background: radial-gradient(rgba(250, 252, 255, 0.3), rgba(250, 252, 255, 0.05));
+  backdrop-filter: blur(5px);
+}
+
+.toggle-container.active .toggle-circle {
+  background: radial-gradient(rgb(55, 82, 255), rgba(18, 31, 88, 0.15));
+  color: white;
+  width: 250px;
+  height: 250px;
+  font-size: 26px;
+  animation: glow 2s infinite;
+}
+
+#main-form{
+  margin: 50px;
+
+}
+
+.main-box{
+    flex: 1;
+    width: 50%;
+    margin: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#main-box-left {
+  background-color: rgb(21, 24, 29);
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(68, 68, 68);
+}
+
+form {
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto Mono', sans-serif;
+    
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+  
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    background: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #ffffff;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
