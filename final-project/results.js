@@ -1,0 +1,2 @@
+retrieveFromLocalStorage();
+replaceResultText();
