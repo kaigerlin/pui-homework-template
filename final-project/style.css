@@ -33,7 +33,7 @@ p {
 .selection-title {
   margin-top: 3vw;
   margin-bottom: 1vw;
-  background-color: transparent;
+  background-color: black;
 }
 
 .continue-button, button {
@@ -148,7 +148,7 @@ border-color: rgb(68, 68, 68);*/
 label {
   font-family: 'Orbitron', sans-serif;
   color: white;
-  background-color: transparent;
+  background-color: black;
   margin: 25px;
   font-size: 28px;
 }
@@ -275,7 +275,7 @@ h5 {
   width: 50%;
   text-align: left;
   font-size: 12px;
-  background-color: transparent;
+  background-color: black;
 }
 
 html, body {
